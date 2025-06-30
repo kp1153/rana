@@ -1,85 +1,27 @@
-"use client";
-import Link from "next/link";
-import { useState } from "react";
+// app/components/Navbar.tsx
 
-const navLinks = [
-  { href: "/basti", label: "बस्ती" },
-  { href: "/kaya-kalpam", label: "कायाकल्पम" },
-  { href: "/leaf-massage", label: "लीफ मसाज" },
-  { href: "/nasya", label: "नस्य" },
-  { href: "/oil-bath", label: "ऑयल बाथ" },
-  { href: "/oil-massage", label: "ऑयल मसाज" },
-  { href: "/raktamokshana", label: "रक्तमोक्षण" },
-  { href: "/rice-massage", label: "राइस मसाज" },
-  { href: "/shirovasti", label: "शिरोवस्ती" },
-  { href: "/steam-bath", label: "स्टीम बाथ" },
-  { href: "/vamana", label: "वमन" },
-  { href: "/virechana", label: "विरेचन" },
-];
+'use client';
+
+import Link from 'next/link';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <>
-      {/* कलात्मक शीर्षक */}
-      <div className="bg-gradient-to-r from-amber-700 via-amber-500 to-amber-700 py-5 shadow-md">
-        <h1
-          className="text-4xl md:text-5xl font-extrabold text-white text-center tracking-widest drop-shadow-lg"
-          style={{
-            fontFamily: `'Noto Serif Devanagari', 'Mukta', 'Mangal', serif`,
-            letterSpacing: "0.15em",
-            textShadow: "0 2px 10px #1e40af",
-          }}
-        >
-          काशी पंचकर्म हॉस्पिटल
-        </h1>
+    <div>
+      {/* शीर्षक सेक्शन */}
+      <div className="bg-amber-500 text-white text-center py-4 text-3xl font-bold tracking-wide">
+        काशी पंचकर्म अस्पताल
       </div>
-
-      {/* Blue Navbar */}
-      <nav className="bg-blue-700 text-white shadow">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center">
-          {/* ☰ Hamburger */}
-          <button
-            className="md:hidden block text-white text-2xl mr-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle navigation menu"
-          >
-            ☰
-          </button>
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex flex-1 justify-center flex-nowrap gap-x-8 text-base font-semibold">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="hover:text-amber-200 capitalize transition-colors"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-blue-800 px-4 pb-4">
-            <ul className="space-y-2 text-base font-semibold">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="block text-white hover:text-amber-200 py-1 capitalize"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+      {/* नेविगेशन मेन्यू */}
+      <nav className="bg-gray-700 text-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-center">
+          <div className="flex space-x-8 text-lg font-medium">
+            <Link href="/" className="hover:text-yellow-300 transition">होम</Link>
+            <Link href="/paramarsh" className="hover:text-yellow-300 transition">परामर्श</Link>
+            <Link href="/products" className="hover:text-yellow-300 transition">हमारे उत्पाद</Link>
+            <Link href="/upchar-vidhiyan" className="hover:text-yellow-300 transition">उपचार-विधियाँ</Link>
           </div>
-        )}
+        </div>
       </nav>
-    </>
+    </div>
   );
 }
