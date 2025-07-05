@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const images = [
   "/1.jpg",
@@ -52,16 +53,21 @@ export default function Navbar() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           {images.map((img, idx) => (
-            <img
+            <div
               key={img}
-              src={img}
-              alt=""
               className={`
-                absolute inset-0 w-full h-full object-cover transition-opacity duration-1000
+                absolute inset-0 w-full h-full transition-opacity duration-1000
                 ${idx === bgIndex ? 'opacity-100 z-0' : 'opacity-0 z-0'}
               `}
-              draggable={false}
-            />
+            >
+              <Image
+                src={img}
+                alt={`Background ${idx + 1}`}
+                fill
+                className="object-cover"
+                priority={idx === 0}
+              />
+            </div>
           ))}
           <div className="absolute inset-0 bg-black/60 z-10"></div>
         </div>

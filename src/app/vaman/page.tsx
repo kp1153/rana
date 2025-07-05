@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React from "react";
 
 export default function VamanPage() {
   return (
@@ -8,7 +8,7 @@ export default function VamanPage() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center min-h-[70vh] flex items-center justify-center"
-        style={{ backgroundImage: "url('/Vaman-Therapy.jpg')" }}
+        style={{ backgroundImage: "url(\"/Vaman-Therapy.jpg\")" }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
