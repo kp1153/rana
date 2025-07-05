@@ -1,27 +1,81 @@
-// app/components/Navbar.tsx
-
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
+const images = [
+  "/1.jpg",
+  "/2.jpg",
+  "/3.jpg",
+  "/4.jpg",
+  "/5.jpg",
+  "/6.jpg",
+  "/7.jpg",
+  "/8.jpg",
+  "/9.jpg",
+];
+
+const SLIDE_DURATION = 5000;
+
 export default function Navbar() {
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % images.length);
+    }, SLIDE_DURATION);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
-      {/* शीर्षक सेक्शन */}
+      {/* शीर्षक */}
       <div className="bg-amber-500 text-white text-center py-4 text-3xl font-bold tracking-wide">
         काशी पंचकर्म अस्पताल
       </div>
+
       {/* नेविगेशन मेन्यू */}
       <nav className="bg-gray-700 text-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-center">
-          <div className="flex space-x-8 text-lg font-medium">
-            <Link href="/" className="hover:text-yellow-300 transition">होम</Link>
-            <Link href="/paramarsh" className="hover:text-yellow-300 transition">परामर्श</Link>
-            <Link href="/products" className="hover:text-yellow-300 transition">हमारे उत्पाद</Link>
-            <Link href="/upchar-vidhiyan" className="hover:text-yellow-300 transition">उपचार-विधियाँ</Link>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-6 text-lg font-medium">
+          <Link href="/" className="hover:text-yellow-300 transition">होम</Link>
+          <Link href="/abhyang" className="hover:text-yellow-300 transition">अभ्यंग</Link>
+          <Link href="/swedan" className="hover:text-yellow-300 transition">स्वेदन</Link>
+          <Link href="/vaman" className="hover:text-yellow-300 transition">वमन</Link>
+          <Link href="/virechan" className="hover:text-yellow-300 transition">विरेचन</Link>
+          <Link href="/basti" className="hover:text-yellow-300 transition">बस्ति</Link>
+          <Link href="/raktmokshan" className="hover:text-yellow-300 transition">रक्तमोक्षण</Link>
+          <Link href="/nasya" className="hover:text-yellow-300 transition">नस्य</Link>
         </div>
       </nav>
+
+      {/* स्लाइडिंग इमेज और टेक्स्ट */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
+          {images.map((img, idx) => (
+            <img
+              key={img}
+              src={img}
+              alt=""
+              className={`
+                absolute inset-0 w-full h-full object-cover transition-opacity duration-1000
+                ${idx === bgIndex ? 'opacity-100 z-0' : 'opacity-0 z-0'}
+              `}
+              draggable={false}
+            />
+          ))}
+          <div className="absolute inset-0 bg-black/60 z-10"></div>
+        </div>
+
+        <div className="relative z-20 max-w-3xl mx-auto px-4 py-12 text-white text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            पंचकर्म कराएं, रोगों से मुक्ति पाएं
+          </h1>
+          <p className="text-lg leading-relaxed">
+            आयुर्वेदिक जड़ी-बूटियों द्वारा शरीर का शुद्धिकरण ही पंचकर्म है।<br />
+            यह शरीर की विषाक्तता को दूर करके आपको स्वस्थ, सुंदर, दीर्घायु और पवित्र बनाता है।
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
