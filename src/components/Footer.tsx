@@ -51,12 +51,12 @@ export default function Footer() {
         <div className="pt-6 border-t border-gray-300 text-center text-xs text-gray-600">
           वेबसाइट डेवलपर:{' '}
           <a
-            href="https://www.hamaramorcha.com"
+            href=" https://creativesolutions-tau.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            www.hamaramorcha.com
+             https://creativesolutions-tau.vercel.app/
           </a>
         </div>
       </div>
