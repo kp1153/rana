@@ -1,8 +1,9 @@
-'use client';
+// components/Navbar.js
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const images = [
   "/1.jpg",
@@ -38,14 +39,33 @@ export default function Navbar() {
       {/* नेविगेशन मेन्यू */}
       <nav className="bg-gray-700 text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-6 text-lg font-medium">
-          <Link href="/" className="hover:text-yellow-300 transition">होम</Link>
-          <Link href="/abhyang" className="hover:text-yellow-300 transition">अभ्यंग</Link>
-          <Link href="/swedan" className="hover:text-yellow-300 transition">स्वेदन</Link>
-          <Link href="/vaman" className="hover:text-yellow-300 transition">वमन</Link>
-          <Link href="/virechan" className="hover:text-yellow-300 transition">विरेचन</Link>
-          <Link href="/basti" className="hover:text-yellow-300 transition">बस्ति</Link>
-          <Link href="/raktmokshan" className="hover:text-yellow-300 transition">रक्तमोक्षण</Link>
-          <Link href="/nasya" className="hover:text-yellow-300 transition">नस्य</Link>
+          <Link href="/" className="hover:text-yellow-300 transition">
+            होम
+          </Link>
+          <Link href="/abhyang" className="hover:text-yellow-300 transition">
+            अभ्यंग
+          </Link>
+          <Link href="/swedan" className="hover:text-yellow-300 transition">
+            स्वेदन
+          </Link>
+          <Link href="/vaman" className="hover:text-yellow-300 transition">
+            वमन
+          </Link>
+          <Link href="/virechan" className="hover:text-yellow-300 transition">
+            विरेचन
+          </Link>
+          <Link href="/basti" className="hover:text-yellow-300 transition">
+            बस्ति
+          </Link>
+          <Link
+            href="/raktmokshan"
+            className="hover:text-yellow-300 transition"
+          >
+            रक्तमोक्षण
+          </Link>
+          <Link href="/nasya" className="hover:text-yellow-300 transition">
+            नस्य
+          </Link>
         </div>
       </nav>
 
@@ -57,7 +77,7 @@ export default function Navbar() {
               key={img}
               className={`
                 absolute inset-0 w-full h-full transition-opacity duration-1000
-                ${idx === bgIndex ? 'opacity-100 z-0' : 'opacity-0 z-0'}
+                ${idx === bgIndex ? "opacity-100 z-0" : "opacity-0 z-0"}
               `}
             >
               <Image
@@ -77,8 +97,10 @@ export default function Navbar() {
             पंचकर्म कराएं, रोगों से मुक्ति पाएं
           </h1>
           <p className="text-lg leading-relaxed">
-            आयुर्वेदिक जड़ी-बूटियों द्वारा शरीर का शुद्धिकरण ही पंचकर्म है।<br />
-            यह शरीर की विषाक्तता को दूर करके आपको स्वस्थ, सुंदर, दीर्घायु और पवित्र बनाता है।
+            आयुर्वेदिक जड़ी-बूटियों द्वारा शरीर का शुद्धिकरण ही पंचकर्म है।
+            <br />
+            यह शरीर की विषाक्तता को दूर करके आपको स्वस्थ, सुंदर, दीर्घायु और
+            पवित्र बनाता है।
           </p>
         </div>
       </section>

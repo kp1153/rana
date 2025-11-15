@@ -1,3 +1,4 @@
+// components/Footer.js
 export default function Footer() {
   return (
     <footer className="bg-gray-100 border-t border-gray-300 text-gray-800 px-4 py-8 text-sm">
@@ -18,7 +19,7 @@ export default function Footer() {
             <strong>मोबाइल :</strong> 9415872553, 7355747087
           </p>
           <p>
-            <strong>वेबसाइट :</strong>{' '}
+            <strong>वेबसाइट :</strong>{" "}
             <a
               href="http://www.kashipanchkarmahospital.in"
               target="_blank"
@@ -47,16 +48,15 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* 🌐 वेबसाइट डेवलपर सेक्शन */}
         <div className="pt-6 border-t border-gray-300 text-center text-xs text-gray-600">
-          वेबसाइट डेवलपर:{' '}
+          वेबसाइट डेवलपर:{" "}
           <a
-            href=" https://creativesolutions-tau.vercel.app/"
+            href="https://www.web-developer-kp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline"
+            className="text-pink-600 underline hover:text-pink-700"
           >
-             https://creativesolutions-tau.vercel.app/
+            क्रिएटिव सॉल्यूशंस
           </a>
         </div>
       </div>

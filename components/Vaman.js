@@ -1,6 +1,4 @@
-'use client';
-
-import React from "react";
+"use client";
 
 export default function VamanPage() {
   return (
@@ -8,13 +6,14 @@ export default function VamanPage() {
       {/* Hero Section */}
       <section
         className="relative bg-cover bg-center min-h-[70vh] flex items-center justify-center"
-        style={{ backgroundImage: "url(\"/Vaman-Therapy.jpg\")" }}
+        style={{ backgroundImage: "url('/Vaman-Therapy.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">वमन (Vaman)</h1>
           <p className="text-lg leading-relaxed">
-            यह पंचकर्म की प्रमुख प्रक्रिया है, जिसमें आयुर्वेदिक औषधियों द्वारा वमन (उल्टी) कराकर कफ दोष का शुद्धिकरण किया जाता है।
+            यह पंचकर्म की प्रमुख प्रक्रिया है, जिसमें आयुर्वेदिक औषधियों द्वारा
+            वमन (उल्टी) कराकर कफ दोष का शुद्धिकरण किया जाता है।
           </p>
         </div>
       </section>
@@ -23,8 +22,9 @@ export default function VamanPage() {
       <section className="px-4 py-10 max-w-3xl mx-auto space-y-6 text-gray-800">
         <h2 className="text-2xl font-semibold">वमन क्या है?</h2>
         <p>
-          वमन चिकित्सा एक नियंत्रित और चिकित्सकीय उल्टी की प्रक्रिया है,
-          जो विशेष रूप से कफ दोष से संबंधित रोगों जैसे कि दमा, खांसी, मोटापा, एलर्जी आदि के उपचार में उपयोगी है।
+          वमन चिकित्सा एक नियंत्रित और चिकित्सकीय उल्टी की प्रक्रिया है, जो
+          विशेष रूप से कफ दोष से संबंधित रोगों जैसे कि दमा, खांसी, मोटापा,
+          एलर्जी आदि के उपचार में उपयोगी है।
         </p>
 
         <h2 className="text-2xl font-semibold">प्रक्रिया (Step by Step)</h2>

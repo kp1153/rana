@@ -1,6 +1,4 @@
-'use client';
-
-import React from 'react';
+"use client";
 
 export default function NasyaPage() {
   return (
@@ -14,7 +12,8 @@ export default function NasyaPage() {
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">नस्य (Nasya)</h1>
           <p className="text-lg leading-relaxed">
-            नस्य एक प्रभावशाली पंचकर्म उपचार है जिसमें औषधीय तेल या रस को नाक के माध्यम से शरीर में प्रविष्ट कराया जाता है।
+            नस्य एक प्रभावशाली पंचकर्म उपचार है जिसमें औषधीय तेल या रस को नाक के
+            माध्यम से शरीर में प्रविष्ट कराया जाता है।
           </p>
         </div>
       </section>
@@ -23,8 +22,10 @@ export default function NasyaPage() {
       <section className="px-4 py-10 max-w-3xl mx-auto space-y-6 text-gray-800">
         <h2 className="text-2xl font-semibold">नस्य क्या है?</h2>
         <p>
-          नस्य एक विशिष्ट आयुर्वेदिक प्रक्रिया है जिसमें औषधीय पदार्थों को नाक से डाला जाता है। यह सिर, मस्तिष्क,
-          ग्रीवा (गर्दन), और ENT क्षेत्र से संबंधित रोगों में अत्यंत लाभकारी है। इसे पंचकर्म चिकित्सा की पाँचवीं क्रिया माना जाता है।
+          नस्य एक विशिष्ट आयुर्वेदिक प्रक्रिया है जिसमें औषधीय पदार्थों को नाक
+          से डाला जाता है। यह सिर, मस्तिष्क, ग्रीवा (गर्दन), और ENT क्षेत्र से
+          संबंधित रोगों में अत्यंत लाभकारी है। इसे पंचकर्म चिकित्सा की पाँचवीं
+          क्रिया माना जाता है।
         </p>
 
         <h2 className="text-2xl font-semibold">प्रक्रिया</h2>

@@ -1,8 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
-
-export default function VirechanPage() {
+export default function Virechan() {
   return (
     <div>
       {/* Hero Section */}
@@ -14,7 +12,8 @@ export default function VirechanPage() {
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">विरेचन (Virechan)</h1>
           <p className="text-lg leading-relaxed">
-            आयुर्वेदिक विधि द्वारा शरीर से पित्त दोष को बाहर निकालने की प्रक्रिया — शरीर का प्राकृतिक शुद्धिकरण।
+            आयुर्वेदिक विधि द्वारा शरीर से पित्त दोष को बाहर निकालने की
+            प्रक्रिया — शरीर का प्राकृतिक शुद्धिकरण।
           </p>
         </div>
       </section>
@@ -23,9 +22,10 @@ export default function VirechanPage() {
       <section className="px-4 py-10 max-w-3xl mx-auto space-y-6 text-gray-800">
         <h2 className="text-2xl font-semibold">विरेचन क्या है?</h2>
         <p>
-          विरेचन एक आयुर्वेदिक प्रक्रिया है जिसमें औषधियों के माध्यम से शरीर से पित्त दोष को बाहर निकाला जाता है।
-          यह प्रक्रिया पाचन तंत्र, यकृत (लिवर), और आँतों की गहराई से सफाई करती है।
-          आमतौर पर इसका उपयोग त्वचा रोग, एलर्जी, बवासीर, और पित्त विकारों के लिए किया जाता है।
+          विरेचन एक आयुर्वेदिक प्रक्रिया है जिसमें औषधियों के माध्यम से शरीर से
+          पित्त दोष को बाहर निकाला जाता है। यह प्रक्रिया पाचन तंत्र, यकृत
+          (लिवर), और आँतों की गहराई से सफाई करती है। आमतौर पर इसका उपयोग त्वचा
+          रोग, एलर्जी, बवासीर, और पित्त विकारों के लिए किया जाता है।
         </p>
 
         <h2 className="text-2xl font-semibold">प्रक्रिया (Step by Step)</h2>

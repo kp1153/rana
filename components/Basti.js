@@ -1,6 +1,4 @@
-'use client';
-
-import React from 'react';
+"use client";
 
 export default function BastiPage() {
   return (
@@ -14,7 +12,8 @@ export default function BastiPage() {
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">बस्ति (Basti)</h1>
           <p className="text-lg leading-relaxed">
-            बस्ति पंचकर्म की प्रमुख और प्रभावशाली चिकित्सा है, जो वात दोषों को संतुलित करने में अत्यंत उपयोगी होती है।
+            बस्ति पंचकर्म की प्रमुख और प्रभावशाली चिकित्सा है, जो वात दोषों को
+            संतुलित करने में अत्यंत उपयोगी होती है।
           </p>
         </div>
       </section>
@@ -23,8 +22,10 @@ export default function BastiPage() {
       <section className="px-4 py-10 max-w-3xl mx-auto space-y-6 text-gray-800">
         <h2 className="text-2xl font-semibold">बस्ति क्या है?</h2>
         <p>
-          बस्ति एक आयुर्वेदिक एनीमा (enema) चिकित्सा है जिसमें औषधीय तेलों या काढ़ों को गुदा मार्ग से शरीर में दिया जाता है।
-          यह वात दोष को नियंत्रित करने का सबसे प्रमुख उपाय है। इसे आधा चिकित्सा भी कहा गया है क्योंकि इसका असर शरीर पर व्यापक होता है।
+          बस्ति एक आयुर्वेदिक एनीमा (enema) चिकित्सा है जिसमें औषधीय तेलों या
+          काढ़ों को गुदा मार्ग से शरीर में दिया जाता है। यह वात दोष को नियंत्रित
+          करने का सबसे प्रमुख उपाय है। इसे आधा चिकित्सा भी कहा गया है क्योंकि
+          इसका असर शरीर पर व्यापक होता है।
         </p>
 
         <h2 className="text-2xl font-semibold">प्रक्रिया (Step by Step)</h2>

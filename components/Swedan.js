@@ -1,6 +1,4 @@
-'use client';
-
-import React from 'react';
+"use client";
 
 export default function SwedanPage() {
   return (
@@ -14,7 +12,8 @@ export default function SwedanPage() {
         <div className="relative z-10 text-center px-4 py-20 text-white max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">स्वेदन (Swedan)</h1>
           <p className="text-lg leading-relaxed">
-            आयुर्वेदिक भाप चिकित्सा जो शरीर से विषाक्त तत्वों को पसीने द्वारा बाहर निकालती है और वात दोष को संतुलित करती है।
+            आयुर्वेदिक भाप चिकित्सा जो शरीर से विषाक्त तत्वों को पसीने द्वारा
+            बाहर निकालती है और वात दोष को संतुलित करती है।
           </p>
         </div>
       </section>
@@ -23,9 +22,11 @@ export default function SwedanPage() {
       <section className="px-4 py-10 max-w-3xl mx-auto space-y-6 text-gray-800">
         <h2 className="text-2xl font-semibold">स्वेदन क्या है?</h2>
         <p>
-          स्वेदन एक आयुर्वेदिक चिकित्सा प्रक्रिया है जिसमें रोगी को औषधीय भाप दी जाती है।
-          यह भाप त्वचा के छिद्रों को खोलती है, जिससे पसीने के माध्यम से शरीर से विषैले पदार्थ बाहर निकलते हैं।
-          यह विशेष रूप से वातजन्य रोगों में उपयोगी है और पंचकर्म चिकित्सा की मुख्य प्रक्रिया में से एक मानी जाती है।
+          स्वेदन एक आयुर्वेदिक चिकित्सा प्रक्रिया है जिसमें रोगी को औषधीय भाप दी
+          जाती है। यह भाप त्वचा के छिद्रों को खोलती है, जिससे पसीने के माध्यम से
+          शरीर से विषैले पदार्थ बाहर निकलते हैं। यह विशेष रूप से वातजन्य रोगों
+          में उपयोगी है और पंचकर्म चिकित्सा की मुख्य प्रक्रिया में से एक मानी
+          जाती है।
         </p>
 
         <h2 className="text-2xl font-semibold">प्रक्रिया (Step by Step)</h2>
@@ -48,7 +49,10 @@ export default function SwedanPage() {
 
         <h2 className="text-2xl font-semibold">सावधानियाँ</h2>
         <ul className="list-disc pl-5 space-y-2">
-          <li>बुखार, कमजोरी या दिल की बीमारी वाले रोगी पहले चिकित्सक से परामर्श लें।</li>
+          <li>
+            बुखार, कमजोरी या दिल की बीमारी वाले रोगी पहले चिकित्सक से परामर्श
+            लें।
+          </li>
           <li>भूखे या पूर्ण पेट स्वेदन न कराएं।</li>
           <li>गर्भवती महिलाओं के लिए उपयुक्त नहीं है।</li>
         </ul>
