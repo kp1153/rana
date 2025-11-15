@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const images = [
@@ -39,38 +38,38 @@ export default function Navbar() {
       {/* नेविगेशन मेन्यू */}
       <nav className="bg-gray-700 text-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-6 text-lg font-medium">
-          <Link href="/" className="hover:text-yellow-300 transition">
+          <a href="#home" className="hover:text-yellow-300 transition">
             होम
-          </Link>
-          <Link href="/abhyang" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#abhyang" className="hover:text-yellow-300 transition">
             अभ्यंग
-          </Link>
-          <Link href="/swedan" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#swedan" className="hover:text-yellow-300 transition">
             स्वेदन
-          </Link>
-          <Link href="/vaman" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#vaman" className="hover:text-yellow-300 transition">
             वमन
-          </Link>
-          <Link href="/virechan" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#virechan" className="hover:text-yellow-300 transition">
             विरेचन
-          </Link>
-          <Link href="/basti" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#basti" className="hover:text-yellow-300 transition">
             बस्ति
-          </Link>
-          <Link
-            href="/raktmokshan"
-            className="hover:text-yellow-300 transition"
-          >
+          </a>
+          <a href="#raktmokshan" className="hover:text-yellow-300 transition">
             रक्तमोक्षण
-          </Link>
-          <Link href="/nasya" className="hover:text-yellow-300 transition">
+          </a>
+          <a href="#nasya" className="hover:text-yellow-300 transition">
             नस्य
-          </Link>
+          </a>
         </div>
       </nav>
 
       {/* स्लाइडिंग इमेज और टेक्स्ट */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section
+        id="home"
+        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
+      >
         <div className="absolute inset-0 w-full h-full">
           {images.map((img, idx) => (
             <div
