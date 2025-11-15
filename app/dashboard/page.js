@@ -51,7 +51,10 @@ export default function Dashboard() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* मरीज़ रजिस्ट्रेशन */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/patients")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">👤</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               मरीज़ रजिस्ट्रेशन
@@ -60,16 +63,22 @@ export default function Dashboard() {
           </div>
 
           {/* OPD रिकॉर्ड */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/opd")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">📋</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               OPD रिकॉर्ड
             </h2>
-            <p className="text-gray-600">आज के मरीज़ों का रिकॉर्ड</p>
+            <p className="text-gray-600">आज के मरीजों का रिकॉर्ड</p>
           </div>
 
           {/* पंचकर्म ट्रैकिंग */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/panchakarma")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">🌿</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               पंचकर्म ट्रैकिंग
@@ -78,21 +87,30 @@ export default function Dashboard() {
           </div>
 
           {/* दवा स्टॉक */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/medicines")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">💊</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">दवा स्टॉक</h2>
-            <p className="text-gray-600">दवाओं का भण्डार प्रबंधन</p>
+            <p className="text-gray-600">दवाओं का भंडार प्रबंधन</p>
           </div>
 
           {/* बिलिंग */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/billing")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">💰</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">बिलिंग</h2>
             <p className="text-gray-600">फीस और बिल बनाएं</p>
           </div>
 
           {/* मरीज़ खोजें */}
-          <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer">
+          <div
+            onClick={() => router.push("/dashboard/search")}
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition cursor-pointer"
+          >
             <div className="text-4xl mb-4">🔍</div>
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               मरीज़ खोजें
