@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="pt-6 border-t border-gray-300 text-center text-xs text-gray-600">
           वेबसाइट डेवलपर:{" "}
           <a
-            href="https://www.web-developer-kp.com/"
+            href="https://www.nishantsoftwares.in"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-600 underline hover:text-pink-700"
